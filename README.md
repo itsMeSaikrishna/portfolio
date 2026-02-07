@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pixelated Minimalist Portfolio
+
+A unique portfolio website combining **pixelated/8-bit aesthetic** with **minimalist white/gray colors** and **smooth modern animations**.
+
+## Tech Stack
+
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **Lucide React** - Icons
+
+## Features
+
+- Pixelated design elements with CSS box-shadows
+- Smooth scroll animations
+- Responsive design (mobile, tablet, desktop)
+- Monospace typography throughout
+- Typing animation on hero section
+- Timeline-style experience section
+- Project cards with hover effects
+- Accessible (skip links, ARIA labels, keyboard navigation)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All placeholder content is in `src/lib/data.ts`. Update these values with your own information:
 
-## Learn More
+```typescript
+// src/lib/data.ts
 
-To learn more about Next.js, take a look at the following resources:
+export const siteConfig = {
+  name: '[YOUR_NAME]',          // Your name
+  title: 'Full Stack Developer', // Your title
+  bio: '...',                    // Your bio
+  email: 'hello@example.com',    // Your email
+};
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+export const experiences = [...];  // Your work experience
+export const projects = [...];     // Your projects
+export const skills = [...];       // Your skills
+export const socialLinks = [...];  // Your social links
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── layout.tsx       # Root layout with fonts
+│   ├── page.tsx         # Main page
+│   └── globals.css      # Global styles & pixel utilities
+├── components/
+│   ├── Navigation.tsx   # Fixed navigation bar
+│   ├── Hero.tsx         # Hero section with typing effect
+│   ├── About.tsx        # About section with skills
+│   ├── Experience.tsx   # Timeline experience section
+│   ├── Projects.tsx     # Project cards grid
+│   ├── Contact.tsx      # Contact links
+│   ├── Footer.tsx       # Footer
+│   └── ui/              # Reusable UI components
+│       ├── PixelBox.tsx
+│       ├── PixelButton.tsx
+│       ├── PixelBadge.tsx
+│       ├── ScrollAnimation.tsx
+│       └── SectionTitle.tsx
+├── lib/
+│   └── data.ts          # Site content & configuration
+└── types/
+    └── index.ts         # TypeScript interfaces
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design System
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Colors (Minimalist Palette)
+
+- **Background:** #FAFAFA (off-white)
+- **Cards:** #FFFFFF (white)
+- **Text:** #0A0A0A (near black)
+- **Accent:** #171717 (dark gray)
+- **Muted:** #737373, #A3A3A3
+
+### Pixel Borders
+
+The pixel border effect is achieved using CSS box-shadows:
+
+```css
+.pixel-border {
+  box-shadow:
+    0 -2px 0 0 #171717,
+    2px 0 0 0 #171717,
+    0 2px 0 0 #171717,
+    -2px 0 0 0 #171717;
+}
+```
+
+## Deployment
+
+Deploy easily to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
+
+## License
+
+MIT License - feel free to use this template for your own portfolio!

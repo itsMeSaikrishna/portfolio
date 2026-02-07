@@ -3,25 +3,146 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAFAFA;
+  --foreground: #0A0A0A;
+  --accent: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-mono), monospace;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Pixel Border Utilities */
+@layer components {
+  .pixel-border {
+    box-shadow:
+      0 -2px 0 0 #171717,
+      2px 0 0 0 #171717,
+      0 2px 0 0 #171717,
+      -2px 0 0 0 #171717;
   }
+
+  .pixel-border-sm {
+    box-shadow:
+      0 -1px 0 0 #171717,
+      1px 0 0 0 #171717,
+      0 1px 0 0 #171717,
+      -1px 0 0 0 #171717;
+  }
+
+  .pixel-border-light {
+    box-shadow:
+      0 -2px 0 0 #E5E5E5,
+      2px 0 0 0 #E5E5E5,
+      0 2px 0 0 #E5E5E5,
+      -2px 0 0 0 #E5E5E5;
+  }
+
+  .pixel-corners {
+    position: relative;
+  }
+
+  .pixel-corners::before,
+  .pixel-corners::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--background);
+  }
+
+  .pixel-corners::before {
+    top: -2px;
+    left: -2px;
+  }
+
+  .pixel-corners::after {
+    top: -2px;
+    right: -2px;
+  }
+
+  /* Pixel Button */
+  .pixel-btn {
+    @apply font-mono px-4 py-2 bg-bg-card transition-all duration-200;
+    box-shadow:
+      0 -2px 0 0 #171717,
+      2px 0 0 0 #171717,
+      0 2px 0 0 #171717,
+      -2px 0 0 0 #171717;
+  }
+
+  .pixel-btn:hover {
+    @apply bg-accent-primary text-white;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply font-mono text-2xl md:text-3xl font-bold text-text-primary;
+  }
+
+  .section-title::before {
+    content: '[ ';
+  }
+
+  .section-title::after {
+    content: ' ]';
+  }
+
+  /* Pixel Grid Background */
+  .pixel-grid {
+    background-image:
+      linear-gradient(to right, #E5E5E5 1px, transparent 1px),
+      linear-gradient(to bottom, #E5E5E5 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Selection */
+::selection {
+  background: #171717;
+  color: #FFFFFF;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 2px;
+}
+
+/* Typing cursor animation */
+.typing-cursor::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
