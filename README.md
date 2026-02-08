@@ -111,15 +111,7 @@ The pixel border effect is achieved using CSS box-shadows:
 }
 ```
 
-## Deployment
 
-Deploy easily to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-1. Push code to GitHub
-2. Connect repository to Vercel
-3. Deploy automatically
 
 ## License
 
