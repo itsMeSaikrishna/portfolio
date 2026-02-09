@@ -72,7 +72,7 @@ export const projects: Project[] = [
     title: 'Invoice Automation System',
     description: 'Automated invoice processing system for real-world use. Takes PDF invoices (scanned + text-based), automatically detects type, uses OCR for scanned invoices and LLM with Pydantic schema for reliable data extraction. Built to help my mom\'s tax practice reduce manual data entry from 200+ bills per firm.',
     tech: ['Python', 'OCR', 'LangChain', 'Pydantic', 'Pandas', 'Streamlit'],
-    demoUrl: '#',
+    demoUrl: 'https://itsmesaikrishna-invoice-extractor-app-6af989.streamlit.app',
     githubUrl: 'https://github.com/itsMeSaikrishna/invoice-extractor',
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     title: 'YouTube Sentiment Analyzer',
     description: 'Product recommendation tool that analyzes sentiment in YouTube comment sections to evaluate and compare products. FastAPI backend processes comments using DistilBERT model for accurate sentiment classification, helping users make data-driven purchase decisions.',
     tech: ['Python', 'FastAPI', 'DistilBERT', 'Streamlit', 'NLP'],
-    demoUrl: '#',
+    demoUrl: 'https://youtube-sentiment-analyzer-chi.vercel.app',
     githubUrl: 'https://github.com/itsMeSaikrishna/youtube-sentiment-analyzer',
   },
   {
