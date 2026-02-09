@@ -86,7 +86,7 @@ export const projects: Project[] = [
     id: 3,
     title: 'YouTube Sentiment Analyzer',
     description: 'Product recommendation tool that analyzes sentiment in YouTube comment sections to evaluate and compare products. FastAPI backend processes comments using Groq api LLama model for accurate sentiment classification, helping users make data-driven purchase decisions.',
-    tech: ['Python', 'FastAPI', 'DistilBERT', 'Streamlit', 'NLP'],
+    tech: ['Python', 'FastAPI', 'Groq', 'React19', 'NLP'],
     demoUrl: 'https://youtube-sentiment-analyzer-chi.vercel.app',
     githubUrl: 'https://github.com/itsMeSaikrishna/youtube-sentiment-analyzer',
   },
