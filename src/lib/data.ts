@@ -69,19 +69,37 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 1,
+   title: 'Creative Invoice',
+  description: 'Full-stack AI SaaS platform for automated GST invoice processing. Production-grade system with user authentication (Supabase Auth + JWT), isolated data storage (Row Level Security), and Stripe payment integration. Processes scanned and text-based PDFs through Google Document AI (OCR) → Groq Llama 3.3 70B (extraction) → multi-layer validation pipeline. Exports to JSON, Tally-compatible XML, and CSV. Monorepo architecture with async processing, real-time status polling, and comprehensive test suite. Built to eliminate manual data entry for accounting firms handling 200+ invoices per client.',
+  tech: [
+    'React',
+    'TypeScript', 
+    'Vite',
+    'Tailwind CSS',
+    'FastAPI',
+    'Python',
+    'Supabase',
+    'PostgreSQL',
+    'Google Document AI',
+    'Groq LLM',
+    'LangChain',
+    'Pydantic',
+    'JWT',
+    'Row Level Security',
+    'Stripe',
+    'Pytest'
+  ],
+    githubUrl: 'https://github.com/itsMeSaikrishna/creative-invoice',
+  },
+  {
+    id: 2,
     title: 'Invoice Automation System',
     description: 'Automated invoice processing system for real-world use. Takes PDF invoices (scanned + text-based), automatically detects type, uses OCR for scanned invoices and LLM with Pydantic schema for reliable data extraction. Built to help my mom\'s tax practice reduce manual data entry from 200+ bills per firm.',
     tech: ['Python', 'OCR', 'LangChain', 'Pydantic', 'Pandas', 'Streamlit'],
     demoUrl: 'https://itsmesaikrishna-invoice-extractor-app-6af989.streamlit.app',
     githubUrl: 'https://github.com/itsMeSaikrishna/invoice-extractor',
   },
-  {
-    id: 2,
-    title: 'JSON Output Fixer for LangChain',
-    description: 'A self-healing JSON output fixer for LangChain using Pydantic and recursion. Instead of failing on validation errors, the LLM fixes its own output through recursive validation with safety limits. Plug-and-use solution that integrates seamlessly into LangChain pipelines.',
-    tech: ['Python', 'LangChain', 'Pydantic', 'LLaMA'],
-    githubUrl: 'https://github.com/itsMeSaikrishna/json-output-fixer-langchain',
-  },
+ 
   {
     id: 3,
     title: 'YouTube Sentiment Analyzer',
@@ -96,6 +114,13 @@ export const projects: Project[] = [
     description: 'Complete lead management system for streamlined lead acquisition, tracking, and categorization. Features dynamic dashboard, automated status tracking from "New" to "Qualified", and relational data mapping with a clean minimalist UI.',
     tech: ['ReactJS', 'TailwindCSS', 'Django', 'DRF', 'MySQL'],
     githubUrl: 'https://github.com/itsMeSaikrishna/CRM',
+  },
+   {
+    id: 5,
+    title: 'JSON Output Fixer for LangChain',
+    description: 'A self-healing JSON output fixer for LangChain using Pydantic and recursion. Instead of failing on validation errors, the LLM fixes its own output through recursive validation with safety limits. Plug-and-use solution that integrates seamlessly into LangChain pipelines.',
+    tech: ['Python', 'LangChain', 'Pydantic', 'LLaMA'],
+    githubUrl: 'https://github.com/itsMeSaikrishna/json-output-fixer-langchain',
   },
 ];
 
