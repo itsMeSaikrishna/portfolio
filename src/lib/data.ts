@@ -86,7 +86,7 @@ export const projects: Project[] = [
     'Pydantic',
     'JWT',
     'Row Level Security',
-    'Stripe',
+    'RazorPay',
     'Pytest'
   ],
     githubUrl: 'https://github.com/itsMeSaikrishna/creative-invoice',
