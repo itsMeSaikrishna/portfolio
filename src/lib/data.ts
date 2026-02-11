@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     id: 1,
    title: 'Creative Invoice',
-  description: 'Full-stack AI SaaS platform for automated GST invoice processing. Production-grade system with user authentication (Supabase Auth + JWT), isolated data storage (Row Level Security), and Stripe payment integration. Processes scanned and text-based PDFs through Google Document AI (OCR) → Groq Llama 3.3 70B (extraction) → multi-layer validation pipeline. Exports to JSON, Tally-compatible XML, and CSV. Monorepo architecture with async processing, real-time status polling, and comprehensive test suite. Built to eliminate manual data entry for accounting firms handling 200+ invoices per client.',
+  description: 'Full-stack AI SaaS platform for automated GST invoice processing. Production-grade system with user authentication (Supabase Auth + JWT), isolated data storage (Row Level Security), and Stripe payment integration. Processes scanned and text-based PDFs through Google Document AI (OCR) → Groq Llama 3.3 70B (extraction) → multi-layer validation pipeline. Exports to JSON, Tally-compatible XML, and CSV. Monorepo architecture with async processing, real-time status polling, and comprehensive test suite. Built to eliminate manual data entry for accounting firms handling 200+ invoices per client. Built using Claude Code for rapid backend API development and test suite generation.',
   tech: [
     'React',
     'TypeScript', 
@@ -87,7 +87,8 @@ export const projects: Project[] = [
     'JWT',
     'Row Level Security',
     'RazorPay',
-    'Pytest'
+    'Pytest',
+    'ClaudeCode'
   ],
     githubUrl: 'https://github.com/itsMeSaikrishna/creative-invoice',
   },
