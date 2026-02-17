@@ -124,6 +124,32 @@ export const projects: Project[] = [
     tech: ['Python', 'LangChain', 'Pydantic', 'LLaMA'],
     githubUrl: 'https://github.com/itsMeSaikrishna/json-output-fixer-langchain',
   },
+  {
+  id: 6,
+  title: 'Simple Streamlit Chatbot',
+  description: 'A minimal ChatGPT-style chatbot built using Streamlit, LangChain, and Hugging Face LLMs. Powered by Meta LLaMA-3-8B-Instruct, it maintains a simple chat history, supports clearing conversations, uses secure environment variable handling, and efficiently loads models with caching.',
+  tech: ['Python', 'Streamlit', 'LangChain', 'Hugging Face', 'Meta LLaMA-3'],
+  demoUrl: 'https://itsmesaikrishna-simple-streamlit-langchain-chatbot-app-zmnmev.streamlit.app/', 
+  githubUrl: 'https://github.com/itsMeSaikrishna/simple-streamlit-langchain-chatbot', 
+},
+  {
+  id: 4,
+  title: 'Customer Churn Analysis & Prediction Dashboard',
+  description: 'End-to-end customer churn prediction system built using rigorous statistical feature selection and machine learning. Includes deep EDA, hypothesis testing (Mann-Whitney U, Chi-Square), multicollinearity checks with VIF, class imbalance handling using SMOTE-NC, and optimized models (XGBoost, RandomForest) tuned via GridSearchCV. Deployed as an interactive Streamlit dashboard for real-time and batch churn prediction.',
+  tech: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Scikit-learn',
+    'XGBoost',
+    'Imbalanced-learn',
+    'SciPy',
+    'Statsmodels',
+    'Streamlit'
+  ],
+  demoUrl: 'https://itsmesaikrishna-churn-prediction-app-rdnt2i.streamlit.app/', 
+  githubUrl: 'https://github.com/itsMeSaikrishna/Churn_Prediction', 
+},
 ];
 
 export const skills: Skill[] = [
