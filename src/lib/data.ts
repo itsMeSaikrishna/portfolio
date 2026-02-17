@@ -90,7 +90,7 @@ export const projects: Project[] = [
     'Pytest',
     'ClaudeCode'
   ],
-    demoUrl:'https://creative-invoice-jade.vercel.app/dashboard',
+    demoUrl:'https://creative-invoice-jade.vercel.app/',
     githubUrl: 'https://github.com/itsMeSaikrishna/creative-invoice',
   },
   {
