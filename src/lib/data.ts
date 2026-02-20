@@ -221,28 +221,51 @@ export const skills: Skill[] = [
     items: ['Python', 'JavaScript', 'TypeScript', 'C', 'SQL'],
   },
   {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Tailwind CSS', 'Streamlit'],
+    category: 'AI & Agentic',
+    items: [
+      'LangChain',
+      'RAG Pipelines',
+      'CrewAI',
+      'LLM Orchestration',
+      'Prompt Engineering',
+      'Autonomous Agents',
+      'Multi-Agent Systems',
+      'Claude Code',
+      'MCP',
+    ],
+  },
+  {
+    category: 'AI/ML Models & Tools',
+    items: [
+      'Groq (Llama 3.3 70B)',
+      'HuggingFace',
+      'Google Document AI',
+      'OCR',
+      'Embeddings',
+      'Pydantic',
+      'NLP',
+      'DistilBERT',
+    ],
+  },
+  {
+    category: 'Vector & Data',
+    items: ['ChromaDB', 'FAISS', 'PostgreSQL', 'MySQL', 'SQLite', 'Supabase'],
   },
   {
     category: 'Backend',
-    items: ['Django', 'FastAPI', 'Django REST Framework'],
+    items: ['FastAPI', 'Django', 'Django REST Framework', 'Node.js', 'JWT Auth', 'SSE'],
   },
   {
-    category: 'AI/ML',
-    items: ['LangChain', 'Hugging Face', 'DistilBERT', 'NLP', 'OCR', 'Pydantic'],
+    category: 'Frontend',
+    items: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Electron', 'Streamlit'],
   },
   {
-    category: 'Database',
-    items: ['MySQL', 'PostgreSQL'],
-  },
-  {
-    category: 'Tools',
-    items: ['Git', 'Docker', 'PowerBI', 'Linux'],
+    category: 'Tools & Cloud',
+    items: ['Git', 'Docker', 'Supabase', 'Vertex AI', 'Linux', 'PowerBI'],
   },
   {
     category: 'Currently Learning',
-    items: ['System Design', 'Vertex AI', 'MCP', 'Advanced LangChain'],
+    items: ['System Design', 'Advanced LangChain', 'AutoGen', 'Reinforcement Learning'],
   },
 ];
 
