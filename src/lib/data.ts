@@ -132,7 +132,7 @@ export const projects: Project[] = [
       'SSE',
       'Vite',
     ],
-    demoUrl: '',
+    demoUrl: 'https://tuberag-who2.vercel.app/',
     githubUrl: 'https://github.com/itsMeSaikrishna/tuberag',
   },
   {
