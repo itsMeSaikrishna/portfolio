@@ -53,7 +53,7 @@ export const education: Education[] = [
     id: 1,
     institution: 'APJ Abdul Kalam Technological University',
     degree: 'Bachelor of Technology - Computer Science',
-    duration: 'Nov 2021 - May 2025',
+    duration: 'Nov 2021 - Jun 2025',
     gpa: '7.25',
     courses: [
       'Operating Systems',
